@@ -1,0 +1,97 @@
+<!doctype html>
+<html>
+  <head>
+    <title>HTML 3</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+      *{box-sizing: border-box;}
+      body{font-family: 'Stick No Bills', sans-serif; margin: 0}
+      .header {padding:60px; text-align:center; background-color:rgb(0,0,255); color:white;}
+      .navbar {display:flex; background-color:#333;}
+      .navbar a {color:white; padding:20px; text-decoration:none; text-align:center;}
+      .navbar a:hover {background-color:#ddd; color:black;}
+      .row {display:flex; flex-wrap:wrap;}
+      .side {flex:40%; background-color:gray; padding:20px;}
+      .main {flex:60%; background-color:white; padding:20px;}
+      .flex-container {display:flex; flex-direction:column; background-color:dodgerblue;}
+      .flex-container > div {background-color:#f1f1f1; width: 100px; margin:10px; text-align:center; line-height:75px;font-size:30px;}
+      .flex-container2 {display:flex; flex-direction:row; background-color:gray;}
+      .flex-container2 > div {background-color:#f1f1f1; width:100px; margin:10px; text-align:center; line-height:75px; font-size:30px;}
+      .fakeimg {background-color:#aaa; width:100%; padding:20px;}
+      .footer {padding:20px; text-align:center; background:#ddd;}
+      @media screen and (max-width: 700px) {.row, .navbar {flex-direction: column;}}
+    </style>
+  </head>
+<body>
+  <div class="header">
+    <h1>Cloud 9</h1>
+    <p>This for the most part the kind of layout I would want for my page, maybe a grid for my photos like the example in W3</p>
+  </div>
+  
+  <div class="navbar">
+    <a href="https://gezeus210.github.io/html2/" target="_blank">1st Webpage</a>
+    <a href="https://gezeus210.github.io/Cloud9/" target="_blank">2nd Webpage</a>
+  </div>
+  
+  <div class="row">
+    <div class="side">
+      <h3>Photos Here</h3>
+      <div class="fakeimg" style="height:200px;">Image</div>
+      <p>I was thinking that maybe on this side I could place the photos with even spacing between each other and then on the right side I could introduce myself and explain how I got interested in photography, the different styles, etc.</p>
+      <p style="font-family;verdana;">Which photo from here is your favorite:</p>
+      <form>
+        <input type="radio" id="pictureone" name="fav_picture" value="Picture one">
+        <label for="pictureone">Picture one</label><br>
+        <input type="radio" id="picturetwo" name="fav_picture" value="Picture two">
+        <label for="picturetwo">Picture two</label><br>
+        <input type="radio" id="picturethree" name="fav_picture" value="Picture three">
+        <label for="picturethree">Picture three</label>
+      </form>
+      <div class="flex-container">
+      <div>1</div>
+      <div>2</div>
+      <div>3</div>
+      </div>
+    </div>
+    <div class="main">
+      <h2>My Interest in Photography</h2>
+      <div class="fakeimg" style="height:200px;">Image</div>
+      <p>On this side, as I mentioned on the left side, will be most of the <b>typing</b> and explanation.</p>
+      <br>
+      <h3>The Style I Use</h3>
+      <p>Anexplanation here of what style of photography I personally used during my class and even now </p>
+      <p>What style of photography is your favorite out of the 3</p>
+      <form action="/action_page.php" target="_blank">
+        <input type="checkbox" id="style1" name="style1" value="Portrait">
+        <label for="style1"> Portrait</label><br>
+        <input type="checkbox" id="style2" name="style2" value="Architectural">
+        <label for="style2"> Architectural</label><br>
+        <input type="checkbox" id="style3" name="style3" value="Sports">
+        <label for="style3"> Sports</label><br><br>
+      </form>
+      <br>
+      <h3>Different Styles of Photography</h3>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/6tt6RXt5Sho" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <p>Just some random writing here explaining th different styles and so on.</p>
+      <div class="flex-container2">
+      <div>1</div>
+      <div>2</div>
+      <div>3</div>
+      </div>
+      <p>If you know a photographer, what is their name and signature style?</p>
+      <form>
+        <label for="name">Name:</label><br>
+        <input type="text" id="name" name="name"><br>
+        <label for="style">Style:</label><br>
+        <input type="text" id="style" name="style">
+      </form>
+    </div>
+  </div>
+  
+  <div class="footer">
+    <h2>Footer</h2>
+  </div>
+  
+</body>
+</html>
